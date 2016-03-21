@@ -1,0 +1,79 @@
+<!--<div class="wrapper">-->
+
+    <!--<div ng-include="'../../angular/templates/header.html'"></div>-->
+
+
+    <!--<div class="content-wrapper">-->
+        <!--<div class="container">-->
+            <!--&lt;!&ndash; Content Header (Page header) &ndash;&gt;-->
+            <!--<section class="content-header">-->
+                <!--<h1>-->
+                    <!--mestrAndo-->
+                    <!--<small>Vr. 1.0</small>-->
+                <!--</h1>-->
+                <!--<ol class="breadcrumb">-->
+                    <!--<li><a href="index.php"><i class="fa fa-dashboard"></i> Home</a></li>-->
+                <!--</ol>-->
+            <!--</section>-->
+
+            <!--&lt;!&ndash; Main content &ndash;&gt;-->
+            <!--<section class="content">-->
+
+                <!---->
+            <!--</section>-->
+            <!--&lt;!&ndash; /.content &ndash;&gt;-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.container &ndash;&gt;-->
+    <!--</div>-->
+
+    <!--<div ng-include="'../../angular/templates/footer.html'"></div>-->
+<!--</div>-->
+<!-- ./wrapper -->
+
+<div class="row" ng-init="load()">
+    <div class="col-md-12">
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title">{{nome}}</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <th style="width: 10px">#</th>
+                        <th>Titulo</th>
+                        <th>link</th>
+                        <th>SRC</th>
+                        <th>Cadastrado em:</th>
+                        <th>Ações</th>
+                    </tr>
+                    <tr ng-repeat="n in novelas">
+                        <td>{{n.id}}</td>
+                        <td>{{n.titulo}}</td>
+                        <td>{{n.rss}}</td>
+                        <td>{{n.imagem}}</td>
+                        <td>{{n.created_at}}</td>
+                        <td>
+                            <a href="#/novela/view/{{n.id}}" class="btn btn-sm btn-default"><i class="fa fa-binoculars"></i></a>
+                            <a href="" ng-click="delete(n.id)" class="btn btn-sm btn-default"><i class="fa fa-close"></i></a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+                <ul class="pagination pagination-sm no-margin pull-right">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.box -->
+    </div>
+</div>
+
+

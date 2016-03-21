@@ -1,0 +1,33 @@
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">Cadastro de novela</h3>
+    </div>
+    <!-- /.box-header -->
+    <!-- form start -->
+    <form role="formEditNovela">
+        <div class="box-body">
+            <div class="form-group">
+                <label>Título</label>
+                <input type="text" ng-model="novela.titulo" class="form-control" id="titulo" placeholder="Título">
+            </div>
+            <div class="form-group">
+                <label>Link</label>
+                <input type="url" class="form-control" ng-model="novela.rss" id="link" placeholder="http://www.site.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">Imagem</label>
+                <input type="file" id="exampleInputFile" file-model="novela.file">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Ativada
+                </label>
+            </div>
+        </div>
+        <!-- /.box-body -->
+
+        <div class="box-footer">
+            <button type="submit" class="btn btn-primary" ng-click="Submit()">Submit</button>
+        </div>
+    </form>
+</div>

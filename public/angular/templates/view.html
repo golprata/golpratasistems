@@ -1,0 +1,50 @@
+<div class="box box-default" ng-init="get()">
+    <div class="box-header with-border">
+        <h3 class="box-title">{{novela.titulo}}</h3>
+
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+        </div>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+
+        <div class="row" >
+            <div class="col-md-3">
+                <div class="">
+                    <img src="../{{novela.imagem}}" alt="User Image" style="border-radius: 50%; height: 128px; width: 128px;">
+                </div>
+            </div>
+            <div class="col-md-9">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <th style="width: 10px">Id:</th>
+                        <td>{{novela.id}}</td>
+                    </tr>
+                    <tr>
+                        <th>Título:</th>
+                        <td>{{novela.titulo}}</td>
+                    </tr>
+                    <tr>
+                        <th>Link:</th>
+                        <td>{{novela.rss}}</td>
+                    </tr>
+                    <tr>
+                        <th>SRC:</th>
+                        <td>{{novela.imagem}}</td>
+                    </tr>
+                </table>
+                <div class="btn-group">
+                    <a href="#/novela/edit/{{novela.id}}"  class="btn btn-success">Editar</a>
+                    <a href="#/novela/apagar/{{novela.id}}"  class="btn btn-danger">Apagar</a>
+                </div>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.box-body -->
+</div>
+</div>

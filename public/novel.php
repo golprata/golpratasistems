@@ -1,0 +1,3 @@
+<?php
+header('Content-Type: application/json');
+echo '[{"id":1,"titulo":"Malhacao","imagem":"http://golprata.besaba.com/img/malhacao.jpg","rss":"http://gshow.globo.com/novelas/malhacao/2014/rss/","created_at":"2016-02-24 11:57:47","updated_at":"-0001-11-30 00:00:00"},{"id":2,"titulo":"Sete Vidas","imagem":"http://golprata.besaba.com/img/setevidas.jpg","rss":"http://gshow.globo.com/novelas/sete-vidas/rss/","created_at":"2016-02-24 11:58:29","updated_at":"-0001-11-30 00:00:00"},{"id":3,"titulo":"I love Paraisopolis","imagem":"http://golprata.besaba.com/img/paraisopolis.jpg","rss":"http://gshow.globo.com/novelas/i-love-paraisopolis/rss/","created_at":"2016-02-24 11:59:02","updated_at":"-0001-11-30 00:00:00"}]';

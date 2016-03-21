@@ -1,0 +1,22 @@
+<ion-view view-title="Fabiano, teste app ionic">
+    <ion-content class="padding">
+        <button class="button icon-left ion-home" ng-click="executar()">Enviar</button>
+        <button class="button icon-left ion-home" ng-click="vibrar()">Vibrar</button>
+        <!--<button on-touch="executar()" class="button icon-left ion-home">Test</button>-->
+        {{ nome }}
+        <!--<button class="btn btn-default" >Teste</button>-->
+        <!--<ul class="list" ng-repeat="c in categorias">-->
+            <!--<li class="item">{{ c.nome }}</li>-->
+        <!--</ul>-->
+        <ion-list>
+            <ion-item ng-repeat="c in categorias">
+                <h1>{{c.titulo}}</h1>
+                <!--<ion-option-button class="button-assertive" ng-click="executar(c)">-->
+                    <!--Executar-->
+                <!--</ion-option-button>-->
+            </ion-item>
+        </ion-list>
+
+
+    </ion-content>
+</ion-view>
