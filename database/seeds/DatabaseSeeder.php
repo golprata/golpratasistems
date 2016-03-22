@@ -13,14 +13,7 @@ class DatabaseSeeder extends Seeder
     {
 //        Model::unguard();
 
-        factory('App_acesso\User')->create(
-            [
-                'name' => 'Fabiano Costa',
-                'email' => 'fabiano_81@hotmail.com',
-                'password' => bcrypt(123456),
-                'remember_token' => str_random(10),
-            ]
-        );
+//        factory('App_acesso\User')->create(['name' => 'Fabiano Costa','email' => 'fabiano_81@hotmail.com','password' => bcrypt(123456),'remember_token' => str_random(10),]);
 
 //        factory(App_acesso\Categoria::class, 50)->create()->each(function($u) {
 //            $u->posts()->save(factory(App\Categoria::class)->make());

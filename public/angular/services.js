@@ -4,7 +4,7 @@ angular.module('golprata.services',['ngResource'])
     .factory('NovelasSrv', ['$resource',
         function($resource) {
             return $resource(
-                'http://localhost:8080/apiRest/novela/:id', {
+                'http://boiling-plateau-59239.herokuapp.com/apiRest/novela/:id', {
                     id: '@id'
                 },
                 {
